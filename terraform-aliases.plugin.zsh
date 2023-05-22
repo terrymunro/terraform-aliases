@@ -7,7 +7,9 @@ alias tfaaa="terraform apply --auto-approve"
 
 alias tfp="terraform plan"
 
-alias tfi="terraform import"
+# noglob prevents zsh from parsing the square brackets, which for imports can be
+# common, saves having to put the value in quotes or escaping the square brackets
+alias tfi="noglob terraform import"
 
 alias tfinit="terraform init"
 
