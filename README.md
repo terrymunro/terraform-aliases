@@ -23,3 +23,11 @@ curl -L https://github.com/terrymunro/terraform-aliases.git/raw/main/terraform-a
 
 . ~/.zshrc
 ```
+
+### Use Tofu instead of Terraform
+
+Set `TF_BINARY` env var to `tofu` before the plugin runs.
+
+```zsh
+TF_BINARY=tofu . ~/.zshrc
+```
